@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .photo {
+            width: 650px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .music-players {
+            display: flex;
+            flex-direction: column;
+        }
+        .song-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        audio {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 左边的照片 -->
+        <img src="Image_425001636540946.jpg" alt="照片" class="photo">
+
+        <div class="music-players">
+            <!-- 第一首歌 -->
+            <div class="song-title">memoir</div>
+            <audio controls>
+                <source src="memoir.mp3" type="audio/mpeg">
+                您的浏览器不支持音频元素。
+            </audio>
+
+            <!-- 第二首歌 -->
+            <div class="song-title">NO NAME AS AIRCRASHES IN THESE DAYS</div>
+            <audio controls>
+                <source src="NO NAME AS AIRCRASHES IN THESE DAYS .mp3" type="audio/mpeg">
+                您的浏览器不支持音频元素。
+            </audio>
+
+            <!-- 第三首歌 -->
+            <div class="song-title">End&beginning</div>
+            <audio controls>
+                <source src="End&beginning.mp3" type="audio/mpeg">
+                您的浏览器不支持音频元素。
+            </audio>
+        </div>
+    </div>
+</body>
+</html>
